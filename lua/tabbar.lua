@@ -14,7 +14,6 @@ require "bufferline".setup {
     view = "multiwindow",
     show_buffer_close_icons = true,
     separator_style = "thin",
-    mappings = "true",
     diagnostics = "nvim_lsp",
     diagnostics_indicator = function(count, level)
       local icon = level:match("error") and " " or " "
