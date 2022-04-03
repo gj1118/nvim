@@ -68,6 +68,11 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'EdenEast/nightfox.nvim'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'projekt0n/github-nvim-theme'
+Plug 'lifepillar/vim-solarized8'
+Plug 'sickill/vim-monokai'
+Plug 'phanviet/vim-monokai-pro'
+Plug 'nanotech/jellybeans.vim'
+
 call plug#end()
 
 "disable indent guides 
@@ -175,8 +180,9 @@ endif
 
 "
 " colorscheme onehalflight
-colorscheme vimbones 
-"colorscheme spacecamp
+let g:gruvbox_italic=1 
+set background=dark
+colorscheme jellybeans
 set cursorline
 
 "highlight current line
@@ -240,6 +246,7 @@ nnoremap <S-TAB> :bprevious<CR>
 
 nnoremap <leader>+ :vertical  resize +5<CR>
 nnoremap <leader>- :vertical resize -5<CR>
+
 
 
 set completeopt=menu,menuone,noselect
